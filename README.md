@@ -1,4 +1,4 @@
 Exports
 =======
 
-Expotred files of the .NET Tips.
+This repostioty contains all of the expotred files of the .NET Tips.
