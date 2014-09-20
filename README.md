@@ -1,4 +1,4 @@
 Exports
 =======
 
-This repostioty contains all of the expotred files of the .NET Tips.
+This repository contains all of the exported files of the .NET Tips.
