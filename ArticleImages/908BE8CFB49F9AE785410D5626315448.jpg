@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" class="FF ">
+
+<head id="ctl00_ctl00_HeadTag"><link id="ctl00_ctl00_MasterCss" type="text/css" rel="stylesheet" href="http://i1.codeplex.com/css/v18301/i12291/StyleSheet.ashx" /><link rel="SHORTCUT ICON" href="../favicon.ico" />
+    <link rel="Alternate" type="application/rss+xml" title="CodePlex" href="http://www.codeplex.com/site/feeds/rss" />
+    
+ <style type="text/css">
+     #SiteContent
+     {
+         padding:2; 
+         background-color: inherit; 
+     }
+ </style>
+
+<title>
+	CodePlex - Invalid Query String
+</title></head>
+
+<body onload="masterLoad();">
+    <form name="aspnetForm" method="POST" action="/site/invalidquerystring" id="aspnetForm" autocomplete="off" enctype="multipart/form-data">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExNjY4NjQ0NTcPZBYCZg9kFgJmD2QWBGYPZBYCZg8WAh4EaHJlZgU4aHR0cDovL2kxLmNvZGVwbGV4LmNvbS9jc3MvdjE4MzAxL2kxMjI5MS9TdHlsZVNoZWV0LmFzaHhkAgEPZBYGZg9kFgJmDw8WAh4ISW1hZ2VVcmwFMmh0dHA6Ly9pMS5jb2RlcGxleC5jb20vSW1hZ2VzL3YxODMwMS9sb2dvLWhvbWUucG5nZGQCAQ8WAh4EVGV4dAVKPHNjcmlwdCBzcmM9Ii9zaXRlL2xpYnJhcnkvc3Z5L2Jyb2tlci5qcyIgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij48L3NjcmlwdD5kAgIPDxYCHwEFLmh0dHA6Ly9pMy5jb2RlcGxleC5jb20vSW1hZ2VzL3YxODMwMS9ibGFuay5wbmcWAh4Gb25sb2FkBRlzZWxmLmxvZ29JbWFnZUxvYWRlZD10cnVlZGTatdc15DjKPUHdt86Sw47M5Dp5uw==" />
+</div>
+
+    <script src="http://i1.codeplex.com/scripts/v18301/i7/ScriptLoader.ashx" type="text/javascript"></script>
+    <table id="CanvasTable" cellpadding=0 cellspacing=0>
+        <tr valign="top">
+            <td>
+                <div id="Canvas">
+                    <div id="CanvasContent">
+                        
+    <div id="SiteCanvas">
+        <div id="SiteHeader">
+            <div id="SiteLogo">
+                <a href='http://www.codeplex.com'>
+                    <img id="ctl00_ctl00_MasterContent_imgCodePlexLogo" src="http://i1.codeplex.com/Images/v18301/logo-home.png" alt="CodePlex" style="border-width:0px;" />
+                </a>
+            </div>
+            <div id="SiteHeaderLogin">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td colspan="2" id="SiteLogin" style>
+        <div class="NoWrap ProjectSignInControl">
+            <a href="/site/register/new" id="registerLink" class="ZoomFix">Register</a>
+            <span class="VerticalBarTop ZoomFix">|</span>
+            <a href="https://www.codeplex.com/site/login?RedirectUrl=http%3a%2f%2fwww.codeplex.com%2fsite%2finvalidquerystring" id="signInLink" class="ZoomFix">Sign In</a>
+            <span class="VerticalBarTop ZoomFix">|</span>
+            <a class="ZoomFix" href='http://www.codeplex.com'>CodePlex Home</a>
+        </div>
+    </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="white-space: nowrap;" class="RssIcon">
+                            <a ID="RssLink" href="http://www.codeplex.com/site/feeds/rss" type="application/rss+xml" rel="Alternate" title="CodePlex Site Activity"><img
+                            src="http://i3.codeplex.com/Images/v18301/icon_rss.gif" /></a>
+                        </td>
+                        <td class="NoUnderline" style="white-space: nowrap;">
+                            <a ID="RssLink2" href="http://www.codeplex.com/site/feeds/rss" type="application/rss+xml" rel="Alternate" title="CodePlex Site Activity"><span
+                            class="RssFeedText">RSS Feed</span><span class="RssFeedDescription"> Keep up with new<br /> projects, releases, and more</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="SiteContent" class='SiteContent'>
+            
+
+<div class="OuterBox GradientBox">
+    <div class="ContentPanelBox InnerBox" style="">
+        <div class="Header StandardPaddingBottom ">
+            <h2>Invalid URL</h2>
+        </div>
+        <p class="StandardPadding">
+            Sorry the query string of the URL is invalid.  Click <a href="http://www.codeplex.com">here</a> to return to the home page.
+        </p>
+        <p class="StandardPadding">
+            If you would like to contact us regarding this, please click <a href="https://www.codeplex.com/site/contact">here</a>
+        </p>
+            
+        
+    </div>
+</div>
+
+
+        </div>
+    </div>
+
+                    </div>
+                </div>
+                <div id="UpdateProgressPanel" class="UpdateProgress">
+                    <span id="UpdateProgressText" class="UpdateProgressText">Updating...</span>
+                </div>
+                <div id="Analytics" style="width: 70%">
+                    <script src="/site/library/svy/broker.js" type="text/javascript"></script>
+                    <img id="ctl00_ctl00_BlankImage" onload="self.logoImageLoaded=true" src="http://i3.codeplex.com/Images/v18301/blank.png" style="height:0px;width:0px;border-width:0px;" />
+                    <script language="javascript" type="text/javascript">
+                        var date = new Date();
+                        var timezoneOffset = date.getTimezoneOffset() / 60 * -1;
+                        var timezoneOffsetCookie = getCookie("TimezoneOffset");
+                        var firstTimeSetTimezoneCookie = false;
+
+                        if (timezoneOffsetCookie == null || timezoneOffsetCookie != timezoneOffset) {
+                            firstTimeSetTimezoneCookie = true;
+                            document.cookie = "TimezoneOffset=" + timezoneOffset + '; domain=.codeplex.com';
+                        }
+                    </script>
+                    
+                    
+                        <noscript><a href="http://www.omniture.com" title="Web Analytics">
+                            <img src="http://msstonojstemp.112.2O7.net/b/ss/msstonojstemp/1/H.20.2--NS/0" height="1" width="1" border="0" alt="" />
+                        </a></noscript>
+                    
+       
+                </div>
+            </td>
+        </tr>
+        <tr valign="bottom">
+            <td>
+                <div id="CanvasFooter">
+                    © 2006-2011 Microsoft
+                    <span class="VerticalBar">|</span>
+                    <a href='http://www.codeplex.com/site/help'>Get Help</a>
+                    <span class="VerticalBar">|</span>
+                    <a href='/site/legal/privacy'>Privacy Statement</a>
+                    <span class="VerticalBar">|</span>
+                    <a href='http://www.codeplex.com/site/legal/terms'>Terms of Use</a>
+                    <span class="VerticalBar">|</span>
+                    <a href='http://www.codeplex.com/site/legal/conduct'>Code of Conduct</a>
+                    <span class="VerticalBar">|</span>
+                    <a href="http://www.lakequincy.com" target="_blank">Advertise With Us</a>
+                    <span class="VerticalBar">|</span>
+                    Version 2011.10.12.18301
+                </div>
+            </td>
+        </tr>
+    </table>
+     </form>
+</body>
+</html>

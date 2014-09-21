@@ -1,0 +1,83 @@
+<ApiMonitor>
+    <Include Filename="Headers\windows.h.xml" />
+    <Include Filename="Headers\processes.h.xml" />
+    <Include Filename="Headers\native.h.xml" />
+    <Include Filename="Headers\gdi.h.xml" />
+    <Include Filename="Headers\ioctl.h.xml" />
+    <Include Filename="Headers\registry.h.xml" />
+    <Include Filename="WindowsStore\Packaging\Packaging.h.xml" />
+
+   <Module Name="api-ms-win-core-datetime-l1-1-1.dll" CallingConvention="STDCALL" ErrorFunc="GetLastError" OnlineHelp="MSDN">
+
+        <!-- [NLS_TIME_FLAGS] -->		
+        <Variable Name="[NLS_TIME_FLAGS]" Type="Alias" Base="DWORD">
+            <Display Name="DWORD" />
+            <Flag>
+                <Set Name="TIME_NOMINUTESORSECONDS" Value="0x00000001" />
+                <Set Name="TIME_NOSECONDS"          Value="0x00000002" />
+                <Set Name="TIME_NOTIMEMARKER"       Value="0x00000004" />
+                <Set Name="TIME_FORCE24HOURFORMAT"  Value="0x00000008" />
+                <Set Name="LOCALE_NOUSEROVERRIDE"   Value="0x80000000" />
+                <Set Name="LOCALE_USE_CP_ACP"       Value="0x40000000" />
+            </Flag>
+        </Variable>
+		
+        <!-- [NLS_DATE_FLAGS] -->
+        <Variable Name="[NLS_DATE_FLAGS]" Type="Alias" Base="DWORD">
+            <Display Name="DWORD" />
+            <Flag>
+                <Set Name="DATE_SHORTDATE"          Value="0x00000001" />
+                <Set Name="DATE_LONGDATE"           Value="0x00000002" />
+                <Set Name="DATE_USE_ALT_CALENDAR"   Value="0x00000004" />
+                <Set Name="DATE_YEARMONTH"          Value="0x00000008" />
+                <Set Name="DATE_LTRREADING"         Value="0x00000010" />
+                <Set Name="DATE_RTLREADING"         Value="0x00000020" />
+                <Set Name="LOCALE_NOUSEROVERRIDE"   Value="0x80000000" />
+            </Flag>
+        </Variable>		
+
+		<Category Name="Windows 8/Date Time 1-1" />
+        <Api Name="GetTimeFormat" BothCharset="True">
+            <Param Type="LCID" Name="Locale" />
+            <Param Type="[NLS_TIME_FLAGS]" Name="dwFlags" />
+            <Param Type="const SYSTEMTIME*" Name="lpTime" />
+            <Param Type="LPCTSTR" Name="lpFormat" />
+            <Param Type="LPTSTR" Name="lpTimeStr" OutputOnly="True" />
+            <Param Type="int" Name="cchTime" />
+            <Return Type="int" />
+            <Success Return="NotEqual" Value="0" />
+        </Api>
+        <Api Name="GetTimeFormatEx">
+            <Param Type="LPCWSTR" Name="lpLocaleName" />
+            <Param Type="[NLS_TIME_FLAGS]" Name="dwFlags" />
+            <Param Type="const SYSTEMTIME*" Name="lpTime" />
+            <Param Type="LPCWSTR" Name="lpFormat" />
+            <Param Type="LPWSTR" Name="lpTimeStr" OutputOnly="True" />
+            <Param Type="int" Name="cchTime" />
+            <Return Type="int" />
+            <Success Return="NotEqual" Value="0" />
+        </Api>
+        <Api Name="GetDateFormat" BothCharset="True">
+            <Param Type="LCID" Name="Locale" />
+            <Param Type="[NLS_DATE_FLAGS]" Name="dwFlags" />
+            <Param Type="const SYSTEMTIME*" Name="lpDate" />
+            <Param Type="LPCTSTR" Name="lpFormat" />
+            <Param Type="LPTSTR" Name="lpDateStr" OutputOnly="True" />
+            <Param Type="int" Name="cchDate" />
+            <Return Type="int" />
+            <Success Return="NotEqual" Value="0" />
+        </Api>
+        <Api Name="GetDateFormatEx">
+            <Param Type="LPCWSTR" Name="lpLocaleName" />
+            <Param Type="[NLS_DATE_FLAGS]" Name="dwFlags" />
+            <Param Type="const SYSTEMTIME*" Name="lpDate" />
+            <Param Type="LPCWSTR" Name="lpFormat" />
+            <Param Type="LPWSTR" Name="lpDateStr" OutputOnly="True" />
+            <Param Type="int" Name="cchDate" />
+            <Param Type="LPCWSTR" Name="lpCalendar" />
+            <Return Type="int" />
+            <Success Return="NotEqual" Value="0" />
+        </Api>
+	</Module>
+</ApiMonitor>
+		

@@ -1,0 +1,26 @@
+<people>
+	 <person>
+	  <name>
+		<givenName>name1</givenName>
+		<familyName>lname1</familyName>
+	  </name>
+	  <age>33</age>
+	  <height>short</height>
+	 </person>
+	 <person>
+	  <name>
+		<givenName>name2</givenName>
+		<familyName>lname2</familyName>
+	  </name>
+	  <age>40</age>
+	  <height>short</height>
+	 </person>
+	 <person>
+	  <name>
+		<givenName>name3</givenName>
+		<familyName>lname3</familyName>
+	  </name>
+	  <age>30</age>
+	  <height>medium</height>
+	 </person>
+</people>

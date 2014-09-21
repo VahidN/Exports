@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>test</title>
+		<meta http-equiv="content-style-type" content="text/css">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
+		<!--[if ie]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+		<script type="text/javascript" src="orgchart.js"></script>
+	</head>
+	<body>
+		<canvas id="c_canvas" width="800" height="800" ></canvas>
+
+		<script type="text/javascript">
+		// Draw a colored background:
+var c = document.getElementById("c_canvas");
+var cxt = c.getContext("2d");
+var gradient = cxt.createLinearGradient(0, 0, 800, 320)
+gradient.addColorStop(0, 'Red');
+gradient.addColorStop(.5, 'Yellow');
+gradient.addColorStop(1, 'Green');
+cxt.fillStyle = gradient;
+cxt.fillRect(0, 0, 800, 320);
+
+cxt.save();
+// Remove the comments from the next three lines for a transformation sample
+//cxt.scale(-1.1, 1.1);
+//cxt.translate(-700,-50);
+//cxt.rotate(0.2);
+
+var o = new orgChart();
+
+o.addNode(1, '', '', 'Root node');
+o.addNode(2, 1, 'u', 'u-node 1');
+o.addNode(3, 1, 'u', 'u-node 2');
+o.addNode(4, 1, 'u', 'u-node 3');
+o.addNode(5, 1, 'l', 'l-node 1');
+o.addNode(6, 1, 'l', 'l-node 2');
+o.addNode(7, 1, 'r', 'r-node 1');
+o.addNode(8, 1, 'r', 'r-node 2');
+o.addNode(9, 1, 'r', 'r-node 3');
+
+o.addNode('', '', '', 'Root 2');
+o.addNode('', 'Root 2', 'r', 'using');
+o.addNode('', 'Root 2', 'r', 'text as id');
+
+o.drawChart('c_canvas', 'center');
+
+cxt.restore();
+		</script>
+	</body>
+	
+</html>
