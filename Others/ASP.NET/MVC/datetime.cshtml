@@ -1,0 +1,31 @@
+﻿@*
+  Copy this file to:
+  Views\Shared\DisplayTemplates\datetime.cshtml
+*@
+
+@using System.Globalization
+@model Nullable<DateTime>
+           
+@helper ShamsiDateTime(DateTime info, string separator = "/", bool includeHourMinute = true)
+{
+    int ym = info.Year;
+    int mm = info.Month;
+    int dm = info.Day;
+    var sss = new PersianCalendar();
+    int ys = sss.GetYear(new DateTime(ym, mm, dm, new GregorianCalendar()));
+    int ms = sss.GetMonth(new DateTime(ym, mm, dm, new GregorianCalendar()));
+    int ds = sss.GetDayOfMonth(new DateTime(ym, mm, dm, new GregorianCalendar()));    
+    if (includeHourMinute)
+    {
+        @(ys + separator + ms.ToString("00") + separator + ds.ToString("00") + " " + info.Hour + ":" + info.Minute)
+    }
+    else
+    {
+        @(ys + separator + ms.ToString("00") + separator + ds.ToString("00"))
+    }
+}
+
+@if (@Model.HasValue)
+{
+  @ShamsiDateTime(@Model.Value , separator: "/", includeHourMinute: false)
+}
